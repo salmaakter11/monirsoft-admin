@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard | Monir Soft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!-- Line Awesome CDN -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/simple-datatables@latest.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/Bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+</head>
+
+<body class="layout-light side-menu overlayScroll">
+    <div class="mobile-search">
+        <form class="search-form">
+            <span data-feather="search"></span>
+            <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+        </form>
+    </div>
+
+    <div class="mobile-author-actions"></div>
+    <header class="header-top">
+        <nav class="navbar navbar-light">
+            <div class="navbar-left">
+                <a href="#" class="sidebar-toggle">
+                    <img class="svg" src="img/menu.png" width="30" alt="img"></a>
+                <a class="navbar-brand" href="index.html"><img class="dark" src="img/logo-monir soft.png" width="150"
+                        height="40" alt="svg"></a>
+                <form action="https://demo.jsnorm.com/" class="search-form">
+                    <span data-feather="search"></span>
+                    <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+                </form>
+
+            </div>
+            <!-- ends: navbar-left -->
+
+            <div class="navbar-right">
+                <ul class="navbar-right__menu">
+                    <!-- nav-author -->
+                    <li class="nav-author">
+                        <div class="dropdown-custom">
+                            <a href="javascript:;" class="nav-item-toggle"><img src="img/user.png" alt=""
+                                    class="rounded-circle"></a>
+                            <div class="dropdown-wrapper">
+                                <div class="nav-author__info">
+                                    <div class="author-img">
+                                        <img src="img/user.png" alt="" class="rounded-circle">
+                                    </div>
+                                    <div>
+                                        <h6>Admin User</h6>
+                                        <span>Super Admin</span>
+                                    </div>
+                                </div>
+                                <div class="nav-author__options">
+                                    <ul>
+                                        <li>
+                                            <a href="profile.html">
+                                                <span data-feather="user"></span> Profile</a>
+                                        </li>
+
+                                    </ul>
+                                    <a href="#" class="nav-author__signout">
+                                        <span data-feather="log-out"></span> Sign Out</a>
+                                </div>
+                            </div>
+                            <!-- ends: .dropdown-wrapper -->
+                        </div>
+                    </li>
+                    <!-- ends nav-author -->
+                </ul>
+                <!-- ends: .navbar-right__menu -->
+                <div class="navbar-right__mobileAction d-md-none">
+                    <a href="#" class="btn-search">
+                        <span data-feather="search"></span>
+                        <span data-feather="x"></span></a>
+                    <a href="#" class="btn-author-action">
+                        <span data-feather="more-vertical"></span></a>
+                </div>
+            </div>
+            <!-- ends: .navbar-right -->
+        </nav>
+    </header>
+    <main class="main-content">
+
+        <aside class="sidebar-wrapper">
+            <div class="sidebar sidebar-collapse" id="sidebar">
+                <div class="sidebar__menu-group">
+                    <ul class="sidebar_nav">
+                        <li class="menu-title">
+                            <span>Main menu</span>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <span data-feather="home" class="nav-icon"></span>
+                                <span class="menu-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="has-child ">
+                            <a href="#">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Themes</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="dynamic-themes.html" href="dynamic.html">Dynamic Themes</a>
+                                </li>
+                                <li>
+                                    <a class="static-themes.html" href="static.html">Static Themes</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="has-child">
+                            <a href="#">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Services</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="" href="all-services.html">All Services</a>
+                                </li>
+                                <li>
+                                    <a class="" href="Active-services.html">Active Services</a>
+                                </li>
+                                <li>
+                                    <a class="" href="complete-services.html">Complete Services</a>
+                                </li>
+                                <li>
+                                    <a class="" href="top-selling.html">Top Selling Theme</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="developers.html" class="active">
+                                <span data-feather="user-plus" class="nav-icon"></span>
+                                <span class="menu-text">Developers</span>
+                            </a>
+                        </li>
+                        <li class="has-child">
+                            <a href="#" class="">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Order</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="" href="order_details.html">Order Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-child">
+                            <a href="#" class="">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Settings</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="" href="profile.html">Profile</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="">
+                                <span data-feather="user-plus" class="nav-icon"></span>
+                                <span class="menu-text">Sign Up</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contents">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="breadcrumb-main user-member justify-content-sm-between ">
+                            <div class=" d-flex flex-wrap justify-content-center breadcrumb-main__wrapper">
+                                <div
+                                    class="d-flex align-items-center user-member__title justify-content-center mr-sm-25">
+                                    <h4 class="text-capitalize fw-500 breadcrumb-title">developers</h4>
+                                    
+                                </div>
+
+
+                            </div>
+                            <div class="action-btn">
+                                <a href="#" class="btn px-15 btn-primary" data-toggle="modal" data-target="#new-member">
+                                    <i class="las la-plus fs-16"></i>Add New Member</a>
+
+                                <!-- Modal -->
+                                <div class="modal fade new-member" id="new-member" role="dialog" tabindex="-1"
+                                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content  radius-xl">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title fw-500" id="staticBackdropLabel">New Member
+                                                </h6>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span data-feather="x"></span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="new-member-modal">
+                                                    <form>
+                                                        <div class="form-group mb-20">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Name">
+                                                        </div>
+                                                       <div class="form-group mb-20">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="position">
+                                                        </div>
+                                                        <div class="form-group textarea-group">
+                                                            <label class="mb-15">status</label>
+                                                            <div class="d-flex">
+                                                                <div
+                                                                    class="project-task-list__left d-flex align-items-center">
+                                                                    <div class="checkbox-group d-flex mr-50 pr-10">
+                                                                        <div
+                                                                            class="checkbox-theme-default custom-checkbox checkbox-group__single d-flex">
+                                                                            <input class="checkbox" type="checkbox"
+                                                                                id="check-grp-1" checked>
+                                                                            <label for="check-grp-1"
+                                                                                class="fs-14 color-light strikethrough">
+                                                                                Active
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="checkbox-group d-flex mr-50 pr-10">
+                                                                        <div
+                                                                            class="checkbox-theme-default custom-checkbox checkbox-group__single d-flex">
+                                                                            <input class="checkbox" type="checkbox"
+                                                                                id="check-grp-2">
+                                                                            <label for="check-grp-2"
+                                                                                class="fs-14 color-light strikethrough">
+                                                                               inactive
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                       
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cos-xl-2 col-lg-4 mb-30 col-sm-6">
+
+                        <div class="card position-relative user-member-card">
+                            <div class="card-body text-center p-30">
+                                <div class="account-profile">
+                                    <div class="ap-img d-flex justify-content-center">
+                                        <!-- Profile picture image-->
+                                        <img class="ap-img__main rounded-circle mb-20 bg-opacity-primary wh-150"
+                                            src="img/user.png" alt="profile">
+                                    </div>
+                                    <div class="ap-nameAddress pb-3">
+                                        <h6 class="ap-nameAddress__title">name </h6>
+                                        <p class="ap-nameAddress__subTitle fs-13 pt-1 m-0">Developer</p>
+                                    </div>
+
+                                </div>
+                                <div class="tm-card-overlay position-absolute">
+
+                                    <div class="dropdown  dropdown-click ">
+                                        <div class="userDatatable-content d-inline-block">
+                                            <span
+                                                class="bg-opacity-success color-success rounded-pill userDatatable-content-status active">Active</span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <footer class="footer-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-copyright">
+                            <p>2025 @<a href="#">It Sheba</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-menu text-right">
+                            <ul>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Team</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- ends: .Footer Menu -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <div id="overlayer">
+        <span class="loader-overlay">
+            <div class="atbd-spin-dots spin-lg">
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+            </div>
+        </span>
+    </div>
+
+
+    <!-- inject:js-->
+    <script src="js/plugins.min.js"></script>
+    <script src="js/script.min.js"></script>
+
+    <!-- Simple-DataTables JS -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/DataTable.js"></script>
+
+</body>
+
+</html>

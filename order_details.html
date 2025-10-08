@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard | Monir Soft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!-- Line Awesome CDN -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/simple-datatables@latest.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/Bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+</head>
+
+<body class="layout-light side-menu overlayScroll">
+    <div class="mobile-search">
+        <form class="search-form">
+            <span data-feather="search"></span>
+            <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+        </form>
+    </div>
+
+    <div class="mobile-author-actions"></div>
+    <header class="header-top">
+        <nav class="navbar navbar-light">
+            <div class="navbar-left">
+                <a href="#" class="sidebar-toggle">
+                    <img class="svg" src="img/menu.png" width="30" alt="img"></a>
+                <a class="navbar-brand" href="index.html"><img class="dark" src="img/logo-monir soft.png" width="150"
+                        height="40" alt="svg"></a>
+                <form action="https://demo.jsnorm.com/" class="search-form">
+                    <span data-feather="search"></span>
+                    <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+                </form>
+
+            </div>
+            <!-- ends: navbar-left -->
+
+            <div class="navbar-right">
+                <ul class="navbar-right__menu">
+                    <!-- nav-author -->
+                    <li class="nav-author">
+                        <div class="dropdown-custom">
+                            <a href="javascript:;" class="nav-item-toggle"><img src="img/user.png" alt=""
+                                    class="rounded-circle"></a>
+                            <div class="dropdown-wrapper">
+                                <div class="nav-author__info">
+                                    <div class="author-img">
+                                        <img src="img/user.png" alt="" class="rounded-circle">
+                                    </div>
+                                    <div>
+                                        <h6>Admin User</h6>
+                                        <span>Super Admin</span>
+                                    </div>
+                                </div>
+                                <div class="nav-author__options">
+                                    <ul>
+                                        <li>
+                                            <a href="profile.html">
+                                                <span data-feather="user"></span> Profile</a>
+                                        </li>
+
+                                    </ul>
+                                    <a href="#" class="nav-author__signout">
+                                        <span data-feather="log-out"></span> Sign Out</a>
+                                </div>
+                            </div>
+                            <!-- ends: .dropdown-wrapper -->
+                        </div>
+                    </li>
+                    <!-- ends nav-author -->
+                </ul>
+                <!-- ends: .navbar-right__menu -->
+                <div class="navbar-right__mobileAction d-md-none">
+                    <a href="#" class="btn-search">
+                        <span data-feather="search"></span>
+                        <span data-feather="x"></span></a>
+                    <a href="#" class="btn-author-action">
+                        <span data-feather="more-vertical"></span></a>
+                </div>
+            </div>
+            <!-- ends: .navbar-right -->
+        </nav>
+    </header>
+    <main class="main-content">
+
+        <aside class="sidebar-wrapper">
+            <div class="sidebar sidebar-collapse" id="sidebar">
+                <div class="sidebar__menu-group">
+                    <ul class="sidebar_nav">
+                        <li class="menu-title">
+                            <span>Main menu</span>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <span data-feather="home" class="nav-icon"></span>
+                                <span class="menu-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="has-child ">
+                            <a href="#">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Themes</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="dynamic-themes.html" href="dynamic.html">Dynamic Themes</a>
+                                </li>
+                                <li>
+                                    <a class="static-themes.html" href="static.html">Static Themes</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="has-child ">
+                            <a href="#">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Services</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="" href="all-services.html">All Services</a>
+                                </li>
+                                <li>
+                                    <a class="" href="Active-services.html">Active Services</a>
+                                </li>
+                                <li>
+                                    <a class="" href="complete-services.html">Complete Services</a>
+                                </li>
+                                <li>
+                                    <a class="" href="top-selling.html">Top Selling Theme</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="developers.html" class="">
+                                <span data-feather="user-plus" class="nav-icon"></span>
+                                <span class="menu-text">Developers</span>
+                            </a>
+                        </li>
+                        <li class="has-child open">
+                            <a href="#" class="active">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Order</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="" href="order_details.html">Order Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-child">
+                            <a href="#" class="">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Settings</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="" href="profile.html">Profile</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="">
+                                <span data-feather="user-plus" class="nav-icon"></span>
+                                <span class="menu-text">Sign Up</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contents">
+
+            <div class="container-fluid">
+                <!-- Order Header -->
+                <div class="d-flex justify-content-between align-items-center mb-4 p-3">
+                    <h3 class="fw-bold">Order Details</h3>
+
+                    <a href="#" class="btn px-15 btn-primary" data-toggle="modal" data-target="#edit-modal">
+                        <i class="las la-plus fs-16"></i>Add New </a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade edit-modal" id="edit-modal" role="dialog" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content  radius-xl">
+                            <div class="modal-header">
+                                <h6 class="modal-title fw-500" id="staticBackdropLabel">Edit Order
+                                </h6>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span data-feather="x"></span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="editOrderForm">
+                                    <div class="row g-3">
+                                        <!-- Order Summary -->
+                                        <div class="col-lg-6">
+                                            <h6 class="mb-3">Order Summary</h6>
+                                            <div class="mb-3">
+                                                <label for="orderID" class="form-label">Order ID</label>
+                                                <input type="text" class="form-control" id="orderID" value="#R98056745"
+                                                    readonly>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="orderDate" class="form-label">Order Date</label>
+                                                <input type="date" class="form-control" id="orderDate"
+                                                    value="2025-10-05">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="orderStatus" class="form-label">Order Status</label>
+                                                <select class="form-select" id="orderStatus">
+                                                    <option value="Placed">Placed</option>
+                                                    <option value="Processing" selected>Processing</option>
+                                                    <option value="Shipped">Shipped</option>
+                                                    <option value="Delivered">Delivered</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <!-- Shipping Details -->
+                                        <div class="col-lg-6">
+                                            <h6 class="mb-3">Shipping Details</h6>
+                                            <div class="mb-3">
+                                                <label for="customerName" class="form-label">Customer Name</label>
+                                                <input type="text" class="form-control" id="customerName"
+                                                    value="Salma Akter">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="customerEmail" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="customerEmail"
+                                                    value="salmajahanerin@gmail.com">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="customerPhone" class="form-label">Phone</label>
+                                                <input type="text" class="form-control" id="customerPhone"
+                                                    value="01611850171">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="shippingAddress" class="form-label">Shipping Address</label>
+                                                <textarea class="form-control" id="shippingAddress"
+                                                    rows="2">219/C, West Agargaon, Dhaka-1216, Bangladesh</textarea>
+                                            </div>
+                                        </div>
+
+                                        <!-- Payment Details -->
+                                        <div class="col-lg-6">
+                                            <h6 class="mb-3">Payment</h6>
+                                            <div class="mb-3">
+                                                <label for="paymentMethod" class="form-label">Payment Method</label>
+                                                <select class="form-select" id="paymentMethod">
+                                                    <option value="Credit Card" selected>Credit Card</option>
+                                                    <option value="Paypal">Paypal</option>
+                                                    <option value="Cash">Cash on Delivery</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="paymentStatus" class="form-label">Payment Status</label>
+                                                <select class="form-select" id="paymentStatus">
+                                                    <option value="Paid" selected>Paid</option>
+                                                    <option value="Pending">Pending</option>
+                                                    <option value="Failed">Failed</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <!-- Products in Order -->
+                                        <div class="col-12">
+                                            <h6 class="mb-3">Products in Order</h6>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered align-middle mb-0"
+                                                    id="productsTable">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Product</th>
+                                                            <th>Quantity</th>
+                                                            <th>Price</th>
+                                                            <th>Subtotal</th>
+                                                            <th></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><input type="text" class="form-control"></td>
+                                                            <td><input type="number" class="form-control"></td>
+                                                            <td><input type="number" class="form-control"></td>
+                                                            <td><input type="number" class="form-control"></td>
+                                                            <td><button type="button"
+                                                                    class="btn btn-danger btn-sm remove-row">Remove</button>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <button type="button" class="btn btn-outline-primary btn-sm mt-2"
+                                                    id="addProductBtn">+ Add Product</button>
+                                            </div>
+                                        </div>
+
+                                        <!-- Customer Notes -->
+                                        <div class="col-12">
+                                            <h6 class="mb-3 mt-3">Customer Notes</h6>
+                                            <textarea class="form-control" id="customerNotes"
+                                                rows="3">Please deliver the package after 5 PM. Leave it at the reception if no one is available.</textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Left Column: Order & Shipping Details -->
+                    <div class="col-lg-4">
+                        <!-- Order Summary -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">Order Summary</h5>
+                                <p><strong>Order ID:</strong> #R98056745</p>
+                                <p><strong>Date:</strong> Oct 05, 2025</p>
+                                <p><strong>Customer:</strong> Salma Akter</p>
+                            </div>
+                        </div>
+
+                        <!-- Shipping Details -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">Shipping Details</h5>
+                                <p><strong>Name:</strong> Salma Akter</p>
+                                <p><strong>Address:</strong> 219/C, West Agargaon, Dhaka-1216, Bangladesh</p>
+                                <p><strong>Phone:</strong> 01611850171</p>
+                                <p><strong>Email:</strong> salmajahanerin@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Payment Details -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">Payment</h5>
+                                <p><strong>Method:</strong> Credit Card</p>
+                                <p><strong>Status:</strong> <span class="badge bg-success badge-status">Paid</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Products & Timeline -->
+                    <div class="col-lg-8">
+                        <!-- Products Table -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">Products in Order</h5>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered align-middle mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Product</th>
+                                                <th>Quantity</th>
+                                                <th>Price</th>
+                                                <th>Subtotal</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>E-commerce Website</td>
+                                                <td>1</td>
+                                                <td>$120</td>
+                                                <td>$120</td>
+                                            </tr>
+
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th colspan="3" class="text-end">Total:</th>
+                                                <th>$120</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Customer Request / Notes -->
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">Customer Notes</h5>
+                                <p class="mb-0 text-muted"> Features:
+                                    Upload or update theme thumbnails dynamically.
+                                    Seller avatars, profile links.
+
+                                    Total revenue, number of themes sold.
+
+                                    Auto-update leaderboard weekly or monthly.
+                                    Extra Columns:
+                                    | Rank | Seller | Total Themes | Total Orders | Total Revenue | Rating |
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Order Timeline -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title mb-3">Order Timeline</h5>
+                                <ul class="timeline">
+                                    <li class="timeline-item">
+                                        <strong>Order Placed</strong> - Oct 05, 2025
+                                    </li>
+                                    <li class="timeline-item">
+                                        <strong>Processing</strong> - Oct 05, 2025
+                                    </li>
+                                    <li class="timeline-item">
+                                        <strong>Shipped</strong> - Oct 06, 2025
+                                    </li>
+                                    <li class="timeline-item">
+                                        <strong>Delivered</strong> - Oct 08, 2025
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <footer class="footer-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-copyright">
+                            <p>2025 @<a href="#">It Sheba</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-menu text-right">
+                            <ul>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Team</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- ends: .Footer Menu -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <div id="overlayer">
+        <span class="loader-overlay">
+            <div class="atbd-spin-dots spin-lg">
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+            </div>
+        </span>
+    </div>
+
+
+    <!-- inject:js-->
+    <script src="js/plugins.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <!-- Simple-DataTables JS -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+
+    <script src="js/custom.js"></script>
+    <script>
+        document.getElementById('addProductBtn').addEventListener('click', function () {
+            const table = document.getElementById('productsTable').getElementsByTagName('tbody')[0];
+            const row = table.insertRow();
+            row.innerHTML = `
+      <td><input type="text" class="form-control" ></td>
+      <td><input type="number" class="form-control" ></td>
+      <td><input type="number" class="form-control" ></td>
+      <td><input type="number" class="form-control" ></td>
+      <td><button type="button" class="btn btn-danger btn-sm remove-row">Remove</button></td>
+    `;
+        });
+
+        document.addEventListener('click', function (e) {
+            if (e.target && e.target.classList.contains('remove-row')) {
+                e.target.closest('tr').remove();
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard | Monir Soft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!-- Line Awesome CDN -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/simple-datatables@latest.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/Bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+</head>
+
+<body class="layout-light side-menu overlayScroll">
+    <div class="mobile-search">
+        <form class="search-form">
+            <span data-feather="search"></span>
+            <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+        </form>
+    </div>
+
+    <div class="mobile-author-actions"></div>
+    <header class="header-top">
+        <nav class="navbar navbar-light">
+            <div class="navbar-left">
+                <a href="#" class="sidebar-toggle">
+                    <img class="svg" src="img/menu.png" width="30" alt="img"></a>
+                <a class="navbar-brand" href="index.html"><img class="dark" src="img/logo-monir soft.png" width="150"
+                        height="40" alt="svg"></a>
+                <form action="https://demo.jsnorm.com/" class="search-form">
+                    <span data-feather="search"></span>
+                    <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+                </form>
+
+            </div>
+            <!-- ends: navbar-left -->
+
+            <div class="navbar-right">
+                <ul class="navbar-right__menu">
+                    <!-- nav-author -->
+                    <li class="nav-author">
+                        <div class="dropdown-custom">
+                            <a href="javascript:;" class="nav-item-toggle"><img src="img/user.png" alt=""
+                                    class="rounded-circle"></a>
+                            <div class="dropdown-wrapper">
+                                <div class="nav-author__info">
+                                    <div class="author-img">
+                                        <img src="img/user.png" alt="" class="rounded-circle">
+                                    </div>
+                                    <div>
+                                        <h6>Admin User</h6>
+                                        <span>Super Admin</span>
+                                    </div>
+                                </div>
+                                <div class="nav-author__options">
+                                    <ul>
+                                        <li>
+                                            <a href="profile.html">
+                                                <span data-feather="user"></span> Profile</a>
+                                        </li>
+
+                                    </ul>
+                                    <a href="#" class="nav-author__signout">
+                                        <span data-feather="log-out"></span> Sign Out</a>
+                                </div>
+                            </div>
+                            <!-- ends: .dropdown-wrapper -->
+                        </div>
+                    </li>
+                    <!-- ends nav-author -->
+                </ul>
+                <!-- ends: .navbar-right__menu -->
+                <div class="navbar-right__mobileAction d-md-none">
+                    <a href="#" class="btn-search">
+                        <span data-feather="search"></span>
+                        <span data-feather="x"></span></a>
+                    <a href="#" class="btn-author-action">
+                        <span data-feather="more-vertical"></span></a>
+                </div>
+            </div>
+            <!-- ends: .navbar-right -->
+        </nav>
+    </header>
+    <main class="main-content">
+
+        <aside class="sidebar-wrapper">
+            <div class="sidebar sidebar-collapse" id="sidebar">
+                <div class="sidebar__menu-group">
+                    <ul class="sidebar_nav">
+                        <li class="menu-title">
+                            <span>Main menu</span>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <span data-feather="home" class="nav-icon"></span>
+                                <span class="menu-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="has-child open">
+                            <a href="#" class="active">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Themes</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="dynamic-themes.html" href="dynamic.html">Dynamic Themes</a>
+                                </li>
+                                <li>
+                                    <a class="static-themes.html" href="static.html">Static Themes</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="has-child ">
+                            <a href="#">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Services</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="" href="all-services.html">All Services</a>
+                                </li>
+                                <li>
+                                    <a class="" href="Active-services.html">Active Services</a>
+                                </li>
+                                <li>
+                                    <a class="" href="complete-services.html">Complete Services</a>
+                                </li>
+                                <li>
+                                    <a class="" href="top-selling.html">Top Selling Theme</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="developers.html" class="">
+                                <span data-feather="user-plus" class="nav-icon"></span>
+                                <span class="menu-text">Developers</span>
+                            </a>
+                        </li>
+                        <li class="has-child">
+                            <a href="#" class="">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Order</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="" href="order_details.html">Order Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-child">
+                            <a href="#" class="">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Settings</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="" href="profile.html">Profile</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="">
+                                <span data-feather="user-plus" class="nav-icon"></span>
+                                <span class="menu-text">Sign Up</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contents">
+
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-lg-12">
+
+                        <div class="breadcrumb-main user-member justify-content-sm-between ">
+                            <div class=" d-flex flex-wrap justify-content-center breadcrumb-main__wrapper">
+                                <div
+                                    class="d-flex align-items-center user-member__title justify-content-center mr-sm-25">
+                                    <h4 class="text-capitalize fw-500 breadcrumb-title">Static Themes </h4>
+                                </div>
+
+                            </div>
+                            <div class="action-btn">
+                                <a href="#" class="btn px-15 btn-primary" data-toggle="modal" data-target="#new-member">
+                                    <i class="las la-plus fs-16"></i>Add New </a>
+
+
+                                <!-- Modal -->
+                                <div class="modal fade new-member" id="new-member" role="dialog" tabindex="-1"
+                                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content  radius-xl">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title fw-500" id="staticBackdropLabel">Add New
+                                                </h6>
+
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span data-feather="x"></span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="new-member-modal">
+                                                    <form id="themeForm">
+                                                        <div class="row g-3">
+
+                                                            <div class="col-md-4">
+                                                                <label for="rank" class="form-label">Rank</label>
+                                                                <input type="number" class="form-control" id="rank"
+                                                                    placeholder="1">
+                                                            </div>
+
+                                                            <div class="col-md-8">
+                                                                <label for="themeName" class="form-label">Theme
+                                                                    Name</label>
+                                                                <input type="text" class="form-control" id="themeName"
+                                                                    placeholder="Enter theme name">
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="category"
+                                                                    class="form-label">Category</label>
+                                                                <select class="form-select" id="category">
+                                                                    <option selected disabled>Choose category</option>
+                                                                    <option>eCommerce</option>
+                                                                    <option>Portfolio</option>
+                                                                    <option>Business</option>
+                                                                    <option>Architecture</option>
+                                                                    <option>Education</option>
+                                                                    <option>Blog / Magazine</option>
+                                                                    <option>Travel</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="language" class="form-label">Language /
+                                                                    Framework</label>
+                                                                <select class="form-select" id="language">
+                                                                    <option selected disabled>Select</option>
+                                                                    <option>HTML</option>
+                                                                    <option>Bootstrap</option>
+                                                                    <option>React</option>
+                                                                    <option>Next.js</option>
+                                                                    <option>Vue.js</option>
+                                                                    <option>WordPress</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="price" class="form-label">Price ($)</label>
+                                                                <input type="number" class="form-control" id="price"
+                                                                    placeholder="Enter price">
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="seller" class="form-label">Seller /
+                                                                    Developer</label>
+                                                                <input type="text" class="form-control" id="seller"
+                                                                    placeholder="Enter seller name">
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="orders" class="form-label">Total
+                                                                    Orders</label>
+                                                                <input type="number" class="form-control" id="orders"
+                                                                    placeholder="0">
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="rating" class="form-label">Rating</label>
+                                                                <input type="number" class="form-control" id="rating"
+                                                                    placeholder="4.8" step="0.1" min="0" max="5">
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="status" class="form-label">Status</label>
+                                                                <select class="form-select" id="status">
+                                                                    <option selected>Active</option>
+                                                                    <option>Pending</option>
+                                                                    <option>Rejected</option>
+                                                                    <option>Draft</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="uploadDate" class="form-label">Upload
+                                                                    Date</label>
+                                                                <input type="date" class="form-control" id="uploadDate">
+                                                            </div>
+
+                                                            <div class="col-md-12">
+                                                                <label for="demoURL" class="form-label">Demo URL</label>
+                                                                <input type="url" class="form-control" id="demoURL"
+                                                                    placeholder="https://example.com/demo">
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+
+
+                                <!-- Modal -->
+                                <div class="modal fade edit-modal" id="edit-modal" role="dialog" tabindex="-1"
+                                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content  radius-xl">
+                                            <div class="modal-header">
+                                                <h6 class="modal-title fw-500" id="staticBackdropLabel">Edit Theme Info
+                                                </h6>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span data-feather="x"></span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="new-member-modal">
+                                                    <form id="themeForm">
+                                                        <div class="row g-3">
+
+                                                            <div class="col-md-4">
+                                                                <label for="rank" class="form-label">Rank</label>
+                                                                <input type="number" class="form-control" id="rank"
+                                                                    placeholder="1">
+                                                            </div>
+
+                                                            <div class="col-md-8">
+                                                                <label for="themeName" class="form-label">Theme
+                                                                    Name</label>
+                                                                <input type="text" class="form-control" id="themeName"
+                                                                    placeholder="Enter theme name">
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="category"
+                                                                    class="form-label">Category</label>
+                                                                <select class="form-select" id="category">
+                                                                    <option selected disabled>Choose category</option>
+                                                                    <option>eCommerce</option>
+                                                                    <option>Portfolio</option>
+                                                                    <option>Business</option>
+                                                                    <option>Architecture</option>
+                                                                    <option>Education</option>
+                                                                    <option>Blog / Magazine</option>
+                                                                    <option>Travel</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="language" class="form-label">Language /
+                                                                    Framework</label>
+                                                                <select class="form-select" id="language">
+                                                                    <option selected disabled>Select</option>
+                                                                    <option>HTML</option>
+                                                                    <option>Bootstrap</option>
+                                                                    <option>React</option>
+                                                                    <option>Next.js</option>
+                                                                    <option>Vue.js</option>
+                                                                    <option>WordPress</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="price" class="form-label">Price ($)</label>
+                                                                <input type="number" class="form-control" id="price"
+                                                                    placeholder="Enter price">
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="seller" class="form-label">Seller /
+                                                                    Developer</label>
+                                                                <input type="text" class="form-control" id="seller"
+                                                                    placeholder="Enter seller name">
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="orders" class="form-label">Total
+                                                                    Orders</label>
+                                                                <input type="number" class="form-control" id="orders"
+                                                                    placeholder="0">
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="rating" class="form-label">Rating</label>
+                                                                <input type="number" class="form-control" id="rating"
+                                                                    placeholder="4.8" step="0.1" min="0" max="5">
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="status" class="form-label">Status</label>
+                                                                <select class="form-select" id="status">
+                                                                    <option selected>Active</option>
+                                                                    <option>Pending</option>
+                                                                    <option>Rejected</option>
+                                                                    <option>Draft</option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <label for="uploadDate" class="form-label">Upload
+                                                                    Date</label>
+                                                                <input type="date" class="form-control" id="uploadDate">
+                                                            </div>
+
+                                                            <div class="col-md-12">
+                                                                <label for="demoURL" class="form-label">Demo URL</label>
+                                                                <input type="url" class="form-control" id="demoURL"
+                                                                    placeholder="https://example.com/demo">
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal end -->
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title mb-0">Services List</h5>
+                                    </div><!-- end card header -->
+
+                                    <div class="table-responsive">
+                                        <table id="myTable" class="table table-bordered table-striped align-middle">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Theme Name</th>
+                                                    <th>Category</th>
+                                                    <th>Language</th>
+                                                    <th>Demo URL</th>
+                                                    <th>Price</th>
+                                                    <th>Orders</th>
+                                                    <th>Rating</th>
+                                                    <th>Status</th>
+                                                    <th>Last Updated</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Modern Portfolio</td>
+                                                    <td>Portfolio</td>
+                                                    <td>React</td>
+                                                    <td>https://itsheba24.com/</td>
+                                                    <td>$39</td>
+                                                    <td>124</td>
+                                                    <td>4.8</td>
+                                                    <td>
+                                                        <div class="userDatatable-content d-inline-block">
+                                                            <span
+                                                                class="bg-opacity-success color-success rounded-pill userDatatable-content-status active">Complete</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>02-Oct-2025</td>
+                                                    <td>
+                                                        <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
+                                                            <li>
+                                                                <a href="#" class="edit" data-toggle="modal"
+                                                                    data-target="#edit-modal">
+                                                                    <span data-feather="edit"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="remove">
+                                                                    <span data-feather="trash-2"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>ShopZone</td>
+                                                    <td>eCommerce</td>
+                                                    <td>React</td>
+                                                    <td>https://itsheba24.com/</td>
+                                                    <td>$59</td>
+                                                    <td>245</td>
+                                                    <td>4.9</td>
+                                                    <td>
+                                                        <div class="userDatatable-content d-inline-block">
+                                                            <span
+                                                                class="bg-opacity-success color-success rounded-pill userDatatable-content-status active">
+                                                                Complete
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td>02-Oct-2025</td>
+                                                    <td>
+                                                        <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
+                                                            <li>
+                                                                <a href="#" class="edit" data-toggle="modal"
+                                                                    data-target="#edit-modal">
+                                                                    <span data-feather="edit"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="remove">
+                                                                    <span data-feather="trash-2"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>ArchDesign Studio</td>
+                                                    <td>Architecture</td>
+                                                    <td>React</td>
+                                                    <td>https://itsheba24.com/</td>
+                                                    <td>$59</td>
+                                                    <td>245</td>
+                                                    <td>4.9</td>
+                                                    <td>
+                                                        <div class="userDatatable-content d-inline-block">
+                                                            <span
+                                                                class="bg-opacity-success color-success rounded-pill userDatatable-content-status active">
+                                                                Complete
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td>02-Oct-2025</td>
+                                                    <td>
+                                                        <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
+                                                            <li>
+                                                                <a href="#" class="edit" data-toggle="modal"
+                                                                    data-target="#edit-modal">
+                                                                    <span data-feather="edit"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="remove">
+                                                                    <span data-feather="trash-2"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>ArchDesign Studio</td>
+                                                    <td>Architecture</td>
+                                                    <td>React</td>
+                                                    <td>https://itsheba24.com/</td>
+                                                    <td>$59</td>
+                                                    <td>245</td>
+                                                    <td>4.9</td>
+                                                    <td>
+                                                        <div class="userDatatable-content d-inline-block">
+                                                            <span
+                                                                class="bg-opacity-success color-success rounded-pill userDatatable-content-status active">
+                                                                Complete
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td>02-Oct-2025</td>
+                                                    <td>
+                                                        <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
+                                                            <li>
+                                                                <a href="#" class="edit" data-toggle="modal"
+                                                                    data-target="#edit-modal">
+                                                                    <span data-feather="edit"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="remove">
+                                                                    <span data-feather="trash-2"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <footer class="footer-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-copyright">
+                            <p>2025 @<a href="#">It Sheba</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-menu text-right">
+                            <ul>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Team</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- ends: .Footer Menu -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <div id="overlayer">
+        <span class="loader-overlay">
+            <div class="atbd-spin-dots spin-lg">
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+            </div>
+        </span>
+    </div>
+
+
+    <!-- inject:js-->
+    <script src="js/plugins.min.js"></script>
+    <script src="js/script.min.js"></script>
+
+    <!-- Simple-DataTables JS -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/DataTable.js"></script>
+
+</body>
+
+</html>

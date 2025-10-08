@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monthly Sales Target Progress</title>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+  <style>
+    #sales-target-progress {
+      width: 100%;          /* Take full width */
+      max-width: 500px;     /* Optional max size */
+      height: auto;         /* Let chart calculate height */
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div id="sales-target-progress"></div>
+
+<script>
+Highcharts.chart('sales-target-progress', {
+    chart: {
+        type: 'solidgauge',
+        backgroundColor: 'transparent'
+    },
+
+    title: {
+        text: 'Monthly Sales Target Progress'
+    },
+
+    pane: {
+        center: ['50%', '60%'],
+        size: '100%',
+        startAngle: -90,
+        endAngle: 90,
+        background: {
+            backgroundColor: '#eee',
+            innerRadius: '60%',
+            outerRadius: '100%',
+            shape: 'arc'
+        }
+    },
+
+    tooltip: {
+        enabled: false
+    },
+
+    yAxis: {
+        min: 0,
+        max: 100,
+        stops: [
+            [0.3, '#DF5353'],
+            [0.6, '#DDDF0D'],
+            [0.9, '#55BF3B']
+        ],
+        lineWidth: 0,
+        tickWidth: 0,
+        minorTickInterval: null,
+        tickAmount: 2,
+        title: {
+            text: 'Progress'
+        },
+        labels: {
+            y: 16
+        }
+    },
+
+    plotOptions: {
+        solidgauge: {
+            dataLabels: {
+                y: -20,
+                borderWidth: 0,
+                useHTML: true,
+                format: '<div style="text-align:center"><span style="font-size:24px">{y}%</span><br/>Achieved</div>'
+            }
+        }
+    },
+
+    series: [{
+        name: 'Progress',
+        data: [75], 
+        tooltip: {
+            valueSuffix: ' %'
+        }
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                title: {
+                    style: { fontSize: '14px' }
+                },
+                plotOptions: {
+                    solidgauge: {
+                        dataLabels: {
+                            format: '<div style="text-align:center"><span style="font-size:18px">{y}%</span><br/>Achieved</div>'
+                        }
+                    }
+                }
+            }
+        }]
+    }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard | Monir Soft</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!-- Line Awesome CDN -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- inject:css-->
+
+    <link rel="stylesheet" href="css/Bootstrap.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- endinject -->
+
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+</head>
+
+<body class="layout-light side-menu overlayScroll">
+    <div class="mobile-search">
+        <form class="search-form">
+            <span data-feather="search"></span>
+            <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+        </form>
+    </div>
+
+    <div class="mobile-author-actions"></div>
+    <header class="header-top">
+        <nav class="navbar navbar-light">
+            <div class="navbar-left">
+                <a href="#" class="sidebar-toggle">
+                    <img class="svg" src="img/menu.png" width="30" alt="img"></a>
+                <a class="navbar-brand" href="index.html"><img class="dark" src="img/logo-monir soft.png" width="150"
+                        height="40" alt="svg"></a>
+                <form action="https://demo.jsnorm.com/" class="search-form">
+                    <span data-feather="search"></span>
+                    <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
+                </form>
+
+            </div>
+            <!-- ends: navbar-left -->
+
+            <div class="navbar-right">
+                <ul class="navbar-right__menu">
+                    <!-- nav-author -->
+                    <li class="nav-author">
+                        <div class="dropdown-custom">
+                            <a href="javascript:;" class="nav-item-toggle"><img src="img/user.png" alt=""
+                                    class="rounded-circle"></a>
+                            <div class="dropdown-wrapper">
+                                <div class="nav-author__info">
+                                    <div class="author-img">
+                                        <img src="img/user.png" alt="" class="rounded-circle">
+                                    </div>
+                                    <div>
+                                        <h6>Admin User</h6>
+                                        <span>Super Admin</span>
+                                    </div>
+                                </div>
+                                <div class="nav-author__options">
+                                    <ul>
+                                        <li>
+                                            <a href="profile.html">
+                                                <span data-feather="user"></span> Profile</a>
+                                        </li>
+
+                                    </ul>
+                                    <a href="#" class="nav-author__signout">
+                                        <span data-feather="log-out"></span> Sign Out</a>
+                                </div>
+                            </div>
+                            <!-- ends: .dropdown-wrapper -->
+                        </div>
+                    </li>
+                    <!-- ends nav-author -->
+                </ul>
+                <!-- ends: .navbar-right__menu -->
+                <div class="navbar-right__mobileAction d-md-none">
+                    <a href="#" class="btn-search">
+                        <span data-feather="search"></span>
+                        <span data-feather="x"></span></a>
+                    <a href="#" class="btn-author-action">
+                        <span data-feather="more-vertical"></span></a>
+                </div>
+            </div>
+            <!-- ends: .navbar-right -->
+        </nav>
+    </header>
+    <main class="main-content">
+
+        <aside class="sidebar-wrapper">
+            <div class="sidebar sidebar-collapse" id="sidebar">
+                <div class="sidebar__menu-group">
+                    <ul class="sidebar_nav">
+                        <li class="menu-title">
+                            <span>Main menu</span>
+                        </li>
+                        <li>
+                            <a href="index.html" class="active">
+                                <span data-feather="home" class="nav-icon"></span>
+                                <span class="menu-text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="has-child ">
+                            <a href="#">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Themes</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="dynamic-themes.html" href="dynamic.html">Dynamic Themes</a>
+                                </li>
+                                <li>
+                                    <a class="static-themes.html" href="static.html">Static Themes</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="has-child ">
+                            <a href="#">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Services</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="" href="all-services.html">All Services</a>
+                                </li>
+                                <li>
+                                    <a class="" href="Active-services.html">Active Services</a>
+                                </li>
+                                <li>
+                                    <a class="" href="complete-services.html">Complete Services</a>
+                                </li>
+                                <li>
+                                    <a class="" href="top-selling.html">Top Selling Theme</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="developers.html" class="">
+                                <span data-feather="user-plus" class="nav-icon"></span>
+                                <span class="menu-text">Developers</span>
+                            </a>
+                        </li>
+                        <li class="has-child">
+                            <a href="#" class="">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Order</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="" href="order_details.html">Order Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-child">
+                            <a href="#" class="">
+                                <span data-feather="layout" class="nav-icon"></span>
+                                <span class="menu-text">Settings</span>
+                                <span class="toggle-icon"></span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a class="" href="profile.html">Profile</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="">
+                                <span data-feather="user-plus" class="nav-icon"></span>
+                                <span class="menu-text">Sign Up</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <div class="contents">
+
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="shop-breadcrumb">
+                                <div class="breadcrumb-main">
+                                    <h4 class="text-capitalize breadcrumb-title">Dashboard</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="row">
+                            <div class="col-xxl-3 col-md-6">
+                                <!-- Card  start -->
+                                <div
+                                    class="ap-po-details p-30 radius-xl bg-white d-flex justify-content-between align-items-center mb-25">
+                                    <!-- Icon Section -->
+
+                                    <div>
+                                        <h2 class="mb-0 ">1,2470</h2>
+                                        <p class="mb-0 mt-1">Total Sales</p>
+                                    </div>
+                                    <div
+                                        class="revenue-chart-box__Icon mr-20 order-bg-opacity-primary d-flex align-items-center justify-content-center">
+                                        <img src="img/platform.png" width="40" alt="img">
+                                    </div> <!-- Text Section -->
+                                </div>
+                                <!-- Card End  -->
+                            </div>
+                            <div class="col-xxl-3 col-md-6">
+                                <!-- Card  start -->
+                                <div
+                                    class="ap-po-details p-30 radius-xl bg-white d-flex justify-content-between align-items-center mb-25">
+                                    <!-- Icon Section -->
+                                    <div>
+                                        <h2 class="mb-0">$124.70K</h2>
+                                        <p class="mb-0 mt-1">Total Revenue</p>
+                                    </div>
+                                    <div
+                                        class="revenue-chart-box__Icon mr-20 order-bg-opacity-primary d-flex align-items-center justify-content-center">
+                                        <img src="img/revenue.png" width="40" alt="img">
+                                    </div> <!-- Text Section -->
+                                </div>
+                                <!-- Card End  -->
+                            </div>
+                            <div class="col-xxl-3 col-md-6">
+                                <!-- Card  start -->
+                                <div
+                                    class="ap-po-details p-30 radius-xl bg-white d-flex justify-content-between align-items-center mb-25">
+                                    <!-- Icon Section -->
+                                    <div>
+                                        <h2 class="mb-0">700</h2>
+                                        <p class="mb-0 mt-1">Customers</p>
+                                    </div>
+                                    <div
+                                        class="revenue-chart-box__Icon mr-20 order-bg-opacity-primary d-flex align-items-center justify-content-center">
+                                        <img src="img/public-relation.png" width="40" alt="img">
+                                    </div> <!-- Text Section -->
+                                </div>
+                                <!-- Card End  -->
+                            </div>
+                            <div class="col-xxl-3 col-md-6">
+                                <!-- Card  start -->
+                                <div
+                                    class="ap-po-details p-30 radius-xl bg-white d-flex justify-content-between align-items-center mb-25">
+                                    <!-- Icon Section -->
+                                    <div>
+                                        <h2 class="mb-0">12</h2>
+                                        <p class="mb-0 mt-1">Active Customers</p>
+                                    </div>
+                                    <div
+                                        class="revenue-chart-box__Icon mr-20 order-bg-opacity-primary d-flex align-items-center justify-content-center">
+                                        <img src="img/customer-service.png" width="40" alt="img">
+                                    </div> <!-- Text Section -->
+
+                                </div>
+                                <!-- Card End  -->
+                            </div>
+                            <div class="col-xxl-3 col-md-6">
+                                <!-- Card  start -->
+                                <div
+                                    class="ap-po-details p-30 radius-xl bg-white d-flex justify-content-between align-items-center mb-25">
+                                    <!-- Icon Section -->
+                                    <div>
+                                        <h2 class="mb-0">70</h2>
+                                        <p class="mb-0 mt-1">Pending Orders</p>
+                                    </div>
+                                    <div
+                                        class="revenue-chart-box__Icon mr-20 order-bg-opacity-primary d-flex align-items-center justify-content-center">
+                                        <img src="img/clock.png" width="40" alt="img">
+                                    </div> <!-- Text Section -->
+
+                                </div>
+                                <!-- Card End  -->
+                            </div>
+                            <div class="col-xxl-3 col-md-6">
+                                <!-- Card  start -->
+                                <div
+                                    class="ap-po-details p-30 radius-xl bg-white d-flex justify-content-between align-items-center mb-25">
+                                    <!-- Icon Section -->
+                                    <div>
+                                        <h2 class="mb-0">124</h2>
+                                        <p class="mb-0 mt-1">Ready Theme Order</p>
+                                    </div>
+                                    <div
+                                        class="revenue-chart-box__Icon mr-20 order-bg-opacity-primary d-flex align-items-center justify-content-center">
+                                        <img src="img/mockup.png" width="40" alt="img">
+                                    </div> <!-- Text Section -->
+
+                                </div>
+                                <!-- Card End  -->
+                            </div>
+                            <div class="col-xxl-3 col-md-6">
+                                <!-- Card  start -->
+                                <div
+                                    class="ap-po-details p-30 radius-xl bg-white d-flex justify-content-between align-items-center mb-25">
+                                    <!-- Icon Section -->
+                                    <div>
+                                        <h2 class="mb-0">124</h2>
+                                        <p class="mb-0 mt-1">Custome Theme Order</p>
+                                    </div>
+                                    <div
+                                        class="revenue-chart-box__Icon mr-20 order-bg-opacity-primary d-flex align-items-center justify-content-center">
+                                        <img src="img/folder-web.png" width="40" alt="img">
+                                    </div> <!-- Text Section -->
+
+                                </div>
+                                <!-- Card End  -->
+                            </div>
+                            <div class="col-xxl-3 col-md-6">
+                                <!-- Card  start -->
+                                <div
+                                    class="ap-po-details p-30 radius-xl bg-white d-flex justify-content-between align-items-center mb-25">
+                                    <!-- Icon Section -->
+                                    <div>
+                                        <h2 class="mb-0">124</h2>
+                                        <p class="mb-0 mt-1">Static Theme Order</p>
+                                    </div>
+                                    <div
+                                        class="revenue-chart-box__Icon mr-20 order-bg-opacity-primary d-flex align-items-center justify-content-center">
+                                        <img src="img/website.png" width="40" alt="img">
+                                    </div> <!-- Text Section -->
+
+                                </div>
+                                <!-- Card End  -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6">
+                        <div id="sales-overview-chart"> </div>
+                    </div>
+
+                    <div class="col-xl-6">
+                        <div id="Top-selling-themes-chart"></div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="card mb-25 mt-4">
+                            <div class="card-header">
+                                <h5>Today Order History</h5>
+                            </div>
+                            <div class="card-body p-1 app-scroll">
+                                <ul class="app-timeline-box order-timeline">
+
+                                    <!-- Orders Placed Today -->
+                                    <li class="timeline-section">
+                                        <div class="timeline-icon">
+                                            <span class="bg-primary h-35 w-35 d-flex-center b-r-50">
+                                                <i class="ph-duotone ph-basket f-s-18"></i>
+                                            </span>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <div class="order-timeline-box">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="text-primary f-w-600 mb-0">Orders Placed</h6>
+                                                    <p class="f-s-12 mb-0 text-danger">Oct 05</p>
+                                                </div>
+                                                <div class="mt-2 order-timeline-content">
+                                                    <p class="mb-0">Total Orders: <span>5</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- Processing -->
+                                    <li class="timeline-section">
+                                        <div class="timeline-icon">
+                                            <span class="bg-warning h-35 w-35 d-flex-center b-r-50">
+                                                <i class="ph-duotone ph-gear f-s-18"></i>
+                                            </span>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <div class="order-timeline-box">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="text-warning f-w-600 mb-0">Processing</h6>
+                                                    <p class="f-s-12 mb-0 text-danger">Oct 05</p>
+                                                </div>
+                                                <div class="mt-2 order-timeline-content">
+                                                    <p class="mb-0">Orders being processed: <span>2</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- Shipped -->
+                                    <li class="timeline-section">
+                                        <div class="timeline-icon">
+                                            <span class="bg-success h-35 w-35 d-flex-center b-r-50">
+                                                <i class="ph-duotone ph-truck f-s-18"></i>
+                                            </span>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <div class="order-timeline-box">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="text-success f-w-600 mb-0">Shipped</h6>
+                                                    <p class="f-s-12 mb-0 text-danger">Oct 05</p>
+                                                </div>
+                                                <div class="mt-2 order-timeline-content">
+                                                    <p class="mb-0">Orders shipped today: <span>1</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- Delivered -->
+                                    <li class="timeline-section">
+                                        <div class="timeline-icon">
+                                            <span class="bg-secondary h-35 w-35 d-flex-center b-r-50">
+                                                <i class="ph-duotone ph-seal-check f-s-18"></i>
+                                            </span>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <div class="order-timeline-box">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h6 class="f-w-600 mb-0">Delivered</h6>
+                                                    <p class="f-s-12 mb-0 text-secondary">Oct 05</p>
+                                                </div>
+                                                <div class="mt-2 order-timeline-content">
+                                                    <p class="mb-0">Orders delivered today: <span>2</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="card mb-25 mt-4">
+                            <div class="card-header">
+                                <h5>Today Meeting Schedule</h5>
+                            </div>
+                            <div class="card-body p-1 app-scroll">
+                                <div class="timeline mt-3 ">
+
+                                    <!-- Meeting Item -->
+                                    <div class="timeline-content d-flex align-items-center mb-3">
+                                        <!-- Icons -->
+                                        <div
+                                            class="meeting-schedule-icons d-flex align-items-center justify-content-center m-2">
+                                            <img src="img/skype.png" alt="" class="me-1" width="22">
+                                            <img src="img/meet.png" alt="" class="me-1" width="22">
+                                            <img src="img/zoom.png" alt="" width="22">
+                                        </div>
+
+                                        <!-- Card -->
+                                        <div class="card flex-grow-1 border rounded">
+                                            <div class="card-body py-2">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <h6 class="mb-0 text-dark">Layla Garcia</h6>
+                                                        <p class="mb-0 text-secondary f-s-12">Weekly Progress Update</p>
+                                                    </div>
+                                                    <p class="text-secondary mb-0">10:00 AM</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Meeting 2 -->
+                                    <div class="timeline-content d-flex align-items-center mb-3">
+                                        <!-- Icons -->
+                                        <div
+                                            class="meeting-schedule-icons d-flex align-items-center justify-content-center m-2">
+                                            <img src="img/skype.png" alt="" class="me-1" width="22">
+                                            <img src="img/meet.png" alt="" class="me-1" width="22">
+                                            <img src="img/zoom.png" alt="" width="22">
+                                        </div>
+
+                                        <!-- Card -->
+                                        <div class="card flex-grow-1 border rounded">
+                                            <div class="card-body py-2">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <h6 class="mb-0 text-dark">Layla Garcia</h6>
+                                                        <p class="mb-0 text-secondary f-s-12">Weekly Progress Update</p>
+                                                    </div>
+                                                    <p class="text-secondary mb-0">10:00 AM</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Meeting 3 -->
+                                    <div class="timeline-content d-flex align-items-center mb-3">
+                                        <!-- Icons -->
+                                        <div
+                                            class="meeting-schedule-icons d-flex align-items-center justify-content-center m-2">
+                                            <img src="img/skype.png" alt="" class="me-1" width="22">
+                                            <img src="img/meet.png" alt="" class="me-1" width="22">
+                                            <img src="img/zoom.png" alt="" width="22">
+                                        </div>
+
+                                        <!-- Card -->
+                                        <div class="card flex-grow-1 border rounded">
+                                            <div class="card-body py-2">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <h6 class="mb-0 text-dark">Layla Garcia</h6>
+                                                        <p class="mb-0 text-secondary f-s-12">Weekly Progress Update</p>
+                                                    </div>
+                                                    <p class="text-secondary mb-0">10:00 AM</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Meeting 4 -->
+                                    <div class="timeline-content d-flex align-items-center mb-3">
+                                        <!-- Icons -->
+                                        <div
+                                            class="meeting-schedule-icons d-flex align-items-center justify-content-center m-2">
+                                            <img src="img/skype.png" alt="" class="me-1" width="22">
+                                            <img src="img/meet.png" alt="" class="me-1" width="22">
+                                            <img src="img/zoom.png" alt="" width="22">
+                                        </div>
+
+                                        <!-- Card -->
+                                        <div class="card flex-grow-1 border rounded">
+                                            <div class="card-body py-2">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <h6 class="mb-0 text-dark">Layla Garcia</h6>
+                                                        <p class="mb-0 text-secondary f-s-12">Weekly Progress Update</p>
+                                                    </div>
+                                                    <p class="text-secondary mb-0">10:00 AM</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Meeting 5-->
+                                    <div class="timeline-content d-flex align-items-center mb-3">
+                                        <!-- Icons -->
+                                        <div
+                                            class="meeting-schedule-icons d-flex align-items-center justify-content-center m-2">
+                                            <img src="img/skype.png" alt="" class="me-1" width="22">
+                                            <img src="img/meet.png" alt="" class="me-1" width="22">
+                                            <img src="img/zoom.png" alt="" width="22">
+                                        </div>
+
+                                        <!-- Card -->
+                                        <div class="card flex-grow-1 border rounded">
+                                            <div class="card-body py-2">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div>
+                                                        <h6 class="mb-0 text-dark">Layla Garcia</h6>
+                                                        <p class="mb-0 text-secondary f-s-12">Weekly Progress Update</p>
+                                                    </div>
+                                                    <p class="text-secondary mb-0">10:00 AM</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="card mb-25 mt-4">
+                            <div class="card-header">
+                                <h5>Recent Transactions</h5>
+                            </div>
+                            <div class="card-body p-3 app-scroll">
+                                <ul class="transaction-list mt-3 ">
+                                    <!-- Transaction Item -->
+                                    <li
+                                        class="transaction-list-item d-flex justify-content-between align-items-center mb-2">
+
+                                        <div class="transaction-list-content flex-grow-1 ps-2">
+                                            <h6 class="mb-0">Name</h6>
+                                            <p class="mb-0 text-secondary">Buy E-commerce Website</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <p class="mb-0 f-s-15 f-w-500 text-success">+$24,00</p>
+                                            <p class="mb-0 f-s-12 text-secondary">12:35 PM</p>
+                                        </div>
+                                    </li>
+
+                                    <li
+                                        class="transaction-list-item d-flex justify-content-between align-items-center mb-2">
+
+                                        <div class="transaction-list-content flex-grow-1 ps-2">
+                                            <h6 class="mb-0">Name</h6>
+                                            <p class="mb-0 text-secondary">Buy E-commerce Website</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <p class="mb-0 f-s-15 f-w-500 text-success">+$24,00</p>
+                                            <p class="mb-0 f-s-12 text-secondary">12:35 PM</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="transaction-list-item d-flex justify-content-between align-items-center mb-2">
+
+                                        <div class="transaction-list-content flex-grow-1 ps-2">
+                                            <h6 class="mb-0">Name</h6>
+                                            <p class="mb-0 text-secondary">Buy E-commerce Website</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <p class="mb-0 f-s-15 f-w-500 text-success">+$24,00</p>
+                                            <p class="mb-0 f-s-12 text-secondary">12:35 PM</p>
+                                        </div>
+                                    </li>
+
+                                    <li
+                                        class="transaction-list-item d-flex justify-content-between align-items-center mb-2">
+
+                                        <div class="transaction-list-content flex-grow-1 ps-2">
+                                            <h6 class="mb-0">Name</h6>
+                                            <p class="mb-0 text-secondary">Buy E-commerce Website</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <p class="mb-0 f-s-15 f-w-500 text-success">+$24,00</p>
+                                            <p class="mb-0 f-s-12 text-secondary">12:35 PM</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="transaction-list-item d-flex justify-content-between align-items-center mb-2">
+
+                                        <div class="transaction-list-content flex-grow-1 ps-2">
+                                            <h6 class="mb-0">Name</h6>
+                                            <p class="mb-0 text-secondary">Buy E-commerce Website</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <p class="mb-0 f-s-15 f-w-500 text-success">+$24,00</p>
+                                            <p class="mb-0 f-s-12 text-secondary">12:35 PM</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="transaction-list-item d-flex justify-content-between align-items-center mb-2">
+
+                                        <div class="transaction-list-content flex-grow-1 ps-2">
+                                            <h6 class="mb-0">Name</h6>
+                                            <p class="mb-0 text-secondary">Buy E-commerce Website</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <p class="mb-0 f-s-15 f-w-500 text-success">+$24,00</p>
+                                            <p class="mb-0 f-s-12 text-secondary">12:35 PM</p>
+                                        </div>
+                                    </li>
+                                    <li
+                                        class="transaction-list-item d-flex justify-content-between align-items-center mb-2">
+
+                                        <div class="transaction-list-content flex-grow-1 ps-2">
+                                            <h6 class="mb-0">Name</h6>
+                                            <p class="mb-0 text-secondary">Buy E-commerce Website</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <p class="mb-0 f-s-15 f-w-500 text-success">+$24,00</p>
+                                            <p class="mb-0 f-s-12 text-secondary">12:35 PM</p>
+                                        </div>
+                                    </li>
+
+                                    <li
+                                        class="transaction-list-item d-flex justify-content-between align-items-center mb-2">
+
+                                        <div class="transaction-list-content flex-grow-1 ps-2">
+                                            <h6 class="mb-0">Name</h6>
+                                            <p class="mb-0 text-secondary">Buy E-commerce Website</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <p class="mb-0 f-s-15 f-w-500 text-success">+$24,00</p>
+                                            <p class="mb-0 f-s-12 text-secondary">12:35 PM</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-copyright">
+                            <p>2025 @<a href="#">It Sheba</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-menu text-right">
+                            <ul>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Team</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- ends: .Footer Menu -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <div id="overlayer">
+        <span class="loader-overlay">
+            <div class="atbd-spin-dots spin-lg">
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+                <span class="spin-dot badge-dot dot-primary"></span>
+            </div>
+        </span>
+    </div>
+
+
+    <!-- inject:js-->
+    <script src="js/plugins.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- endinject-->
+
+
+</body>
+
+</html>
